@@ -1,4 +1,4 @@
-# Tiva LaunchPad TM4C123G On-Board IO Driver/Library
+# Tiva LaunchPad On-Board IO Driver/Library
 This is a very simple driver/library meant to make interfacing with the on-board
 IO devices (LEDs and switches) of the Tiva LaunchPad easy and intuitive. I made
 this mainly as a learning experience to get familiar with reading a data sheet
