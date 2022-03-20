@@ -9,8 +9,53 @@ useful.
 1. Copy TM4C123G_onboardio.h and TM4C123G_onboardio.c into your project folder
 2. Include `TM4C123G_onboardio.h` into your source file
 
-## API
-TODO
+### API
+- Enable board IO (must be done before anything else)  
+`void onboardio_enable(void)`
+
+
+- Initialize all board IO devices at once  
+`void onboardio_init(void)`
+
+
+- Initialize a swich  
+`void sw_init(enum SW sw)`
+
+
+- Check if a switch is pressed  
+`bool sw_pressed(enum SW sw)`
+
+
+- Check if a switch has been released  
+`bool sw_released(enum SW sw)`
+
+
+- Initialize an LED  
+`void led_init(enum LED led)`
+
+
+- Turn on an LED  
+`void led_turn_on(enum LED led)`
+
+
+- Turn off an LED  
+`void led_turn_off(enum LED led)`
+
+### Switches
+- SW_1
+- SW_2
+- SW_ALL
+
+### LEDs
+- LED_RED
+- LED_GREEN
+- LED_BLUE
+- LED_YELLOW
+- LED_PURPLE
+- LED_CYAN
+- LED_WHITE
+- LED_ALL
+
 
 ## Example
 This is a simple example where pressing switch 1 on your board will cycle
