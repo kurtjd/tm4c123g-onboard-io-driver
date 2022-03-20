@@ -2,7 +2,7 @@
 This is a very simple driver/library meant to make interfacing with the on-board
 IO devices (LEDs and switches) of the Tiva LaunchPad (TM4C123G) easy and intuitive. I made
 this mainly as a learning experience to get familiar with reading a data sheet
-and reading/writing directly to registers, though some others may find it
+and reading/writing directly to registers, though hopefully others may find it
 useful.
 
 ## Usage
