@@ -7,7 +7,7 @@ useful.
 
 ## Usage
 - Copy TM4C123G_onboardio.h and TM4C123G_onboardio.c into your project folder
-- Include `TM4C123G_onboardio.h` into your source file.
+- Include `TM4C123G_onboardio.h` into your source file
 
 ## API
 TODO
