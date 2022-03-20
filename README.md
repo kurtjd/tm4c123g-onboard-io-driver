@@ -21,38 +21,38 @@ between the different color LEDs.
 
 // Uses the LED enum provided by library to match 0-6 to a color
 static enum LED LED_COLORS[] = {
-	LED_RED,
-	LED_GREEN,
-	LED_BLUE,
-	LED_YELLOW,
-	LED_PURPLE,
-	LED_CYAN,
-	LED_WHITE,
+    LED_RED,
+    LED_GREEN,
+    LED_BLUE,
+    LED_YELLOW,
+    LED_PURPLE,
+    LED_CYAN,
+    LED_WHITE,
 };
 
 int main(void) {
-	int cur_led = 0;
-	
-	// Enable on-board IO and enable switch 1 as well as all LEDs
-	onboardio_enable();
-	sw_init(SW_1);
-	led_init(LED_ALL);
-	
-	// Turn on the LED initially
-	led_turn_on(LED_COLORS[cur_led]);
-	
-	while (1) {
-		// Cycle to the next color if switch 1 is released
-		if (sw_released(SW_1)) {
-			led_turn_off(LED_COLORS[cur_led]);
-			cur_led++;
-			
-			if (cur_led > 6) {
-				cur_led = 0;
-			}
-				
-			led_turn_on(LED_COLORS[cur_led]);
-		}
-	}
+    int cur_led = 0;
+
+    // Enable on-board IO and initialize switch 1 as well as all LEDs
+    onboardio_enable();
+    sw_init(SW_1);
+    led_init(LED_ALL);
+
+    // Turn on the LED initially
+    led_turn_on(LED_COLORS[cur_led]);
+
+    while (1) {
+        // Cycle to the next color if switch 1 is released
+        if (sw_released(SW_1)) {
+            led_turn_off(LED_COLORS[cur_led]);
+
+            cur_led++;
+            if (cur_led > 6) {
+                cur_led = 0;
+            }
+
+            led_turn_on(LED_COLORS[cur_led]);
+        }
+    }
 }
 ```
