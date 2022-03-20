@@ -6,8 +6,8 @@ and reading/writing directly to registers, though hopefully others may find it
 useful.
 
 ## Usage
-- Copy TM4C123G_onboardio.h and TM4C123G_onboardio.c into your project folder
-- Include `TM4C123G_onboardio.h` into your source file
+1. Copy TM4C123G_onboardio.h and TM4C123G_onboardio.c into your project folder
+2. Include `TM4C123G_onboardio.h` into your source file
 
 ## API
 TODO
